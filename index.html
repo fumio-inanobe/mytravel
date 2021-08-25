@@ -11,7 +11,7 @@
   <h1>北関東へ</h1>
   <section>
     <div>
-      <img src="img/Basho.jpg">
+      <img src="img/Basho.jpg" id='trigger'>
     </div>
     <div>
       <p>東北への旅立ちです。</p>
@@ -21,6 +21,7 @@
         弟子の曾良も一緒です。
         良い旅となりますように！
       </p>
+      <p id=>楽しみです。</p>
     </div>
     
   </section>
@@ -28,13 +29,26 @@
     <dev>
       <h2>ここで一首</h2>
       <p>古池や蛙飛び込む水の音</p>
-      <p>この句は、深川の家で詠みました。</p>
+      <p id='target'>この句は、深川の家で詠みました。</p>
   
     </dev>
 
   </section>
 
+  <script>
+    'use strict';
+
+    function process(){
+      document.getElementById('target').textContent='Hope the travel will be fine!';
+    }
+    document.getElementById('trigger').addEventListener('click', process);
+
+  </script>
+
+
   
+
   
+
 </body>
 </html>

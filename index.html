@@ -4,27 +4,51 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Okuno Hosomichi</title>
+  <title>千住旅立ち</title>
   <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-  <h1>松尾　次郎</h1>
+  <h1>北関東へ</h1>
   <section>
     <div>
-      <img src="img/Basho.jpg">
+      <img src="img/Basho.jpg" id='trigger'>
     </div>
     <div>
-      <p>プログラミング勉強中</p>
-  
-      <p>独学なので進捗の判断が難しいのが難点です。</p>
-
-      <h2>My Project</h2>
-      <a href="https://fumio-inanobe.github.io/mytravel/"></a>
+      <p>東北への旅立ちです。</p>
+      <p>深川から隅田川を千住の宿まで北上し、千住大橋で上陸しました。</p>
+      <p>目の前に足立市場があります。</p>
+      <p>これから長旅に出発です。無事に帰れることを祈願。
+        弟子の曾良も一緒です。
+        良い旅となりますように！
+      </p>
+      <p id=>楽しみです。</p>
     </div>
+    
+  </section>
+  <section>
+    <dev>
+      <h2>ここで一首</h2>
+      <p>古池や蛙飛び込む水の音</p>
+      <p id='target'>この句は、深川の家で詠みました。</p>
+  
+    </dev>
 
   </section>
 
+  <script>
+    'use strict';
+
+    function process(){
+      document.getElementById('target').textContent='Hope the travel will be fine!';
+    }
+    document.getElementById('trigger').addEventListener('click', process);
+
+  </script>
+
+
   
+
   
+
 </body>
 </html>

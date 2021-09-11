@@ -1,0 +1,81 @@
+body{
+  background: rgb(217, 235, 135);
+}
+
+head div{
+  display: flex;
+}
+h1 {
+  font-size: 30px;
+  color: blue;
+  padding-bottom: 8px;
+  border-bottom: 1px solid #ddd;
+  text-align: center;
+  
+}
+
+body nav{
+  margin-left: auto;
+
+}
+
+ul{
+  text-decoration: none;
+}
+
+main div{
+  display: flex;
+}
+
+a img{
+  width: 120px;
+  height: 200px;
+  transition-property: transform;
+  transition-duration: 2s;
+  transform-origin: top left;
+  transition-delay: 1s;
+  transition-timing-function: linear;
+
+
+}
+
+a img:hover{
+  transform: translateX(200px) scale(2);
+
+}
+
+pre{
+  line-height: 2;
+  font-size: 16px;
+}
+
+div.learn{
+  background: #ccc;
+  width: 400px;
+  height: 200px;
+}
+div label{
+  font-size: 24px;
+  font-weight: bold;
+}
+
+input.color{
+
+}
+
+.box{
+  font-size: 16px;
+  color: red;
+  text-align: center;
+  width: 100px;
+  height: 100px;
+  background-color: skyblue;
+  box-shadow: 10px 5px #ddd;
+  transition-property: transform, background;
+  transition-duration: 2s;
+}
+
+.box:hover{
+  transform:translate(100px) rotate(45deg) scale(2);
+  background: orange;
+}
